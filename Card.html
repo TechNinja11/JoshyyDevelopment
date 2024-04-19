@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+
+        * {
+            
+        margin: 0;
+        padding: 0;
+
+        }
+
+        body {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        align-items: center;
+        background: #b7afaf9a;
+        font-family: 'Nunito', sans-serif;
+        }
+
+       .card {
+        width: 27%;
+        height: 470px;
+        background: cyan;
+        display: flex;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        box-shadow: 0px 5px 10px #333232;
+        flex-direction: column;
+       }
+
+       .card span {
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #313030;
+        display: block;
+        font-size: 22px;
+        margin-bottom: 1px;
+       }
+
+       .card .image {
+        width: 25%;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+       }
+
+       .card .info {
+        text-align: center;
+        color: #535353;
+        font-size: 13px;
+        margin: 26px 10px 10px;
+        line-height: 20px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 25px;
+       }
+
+       .card .about-button {
+        width: 100px;
+        height: 40px;
+        padding: 10px 12px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        margin: auto;
+        border-radius: 30px;
+        cursor: pointer;
+        border: #fff;
+        transition: .4s ease-in-out;
+        border: 2px solid #fff;
+        box-shadow: 1px 4px 8px gray;
+       }
+
+        .card .about-button:hover {
+        color: #000;
+        background: transparent;
+        filter: blur(-5px);
+        transition: 0.3s ease;
+        transform: translateY(-3px);
+        }
+
+        .card .about-button:active {
+        box-shadow: 1px 3px 6px #454444, -1px -3px 6px #454444;
+        color: #fff;
+        }
+
+       .card .social  {
+        margin-top: 4px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 15px;
+       }
+
+       .card .social i {
+        background: #000;
+        color: #fff;
+        padding: 3px;
+        width: 17px;
+        height: 14px;
+        border-radius: 50px;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 1px 4px 8px gray;
+        border: 2px solid #fff;
+       }
+
+       .card .social i:hover {
+        background: transparent;
+        color: #000;
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+       }
+
+       @media screen and (max-width: 992px) {
+        .card {
+            display: flex;
+            width: 57%;
+            flex-direction: column;
+        }
+
+        .card span {
+            display: block;
+        }
+        .card .image {
+            width: 25%;
+            height: 90px;
+        }
+       }
+
+       @media screen and (max-width: 768px)  {
+        .card {
+            display: flex;
+            width: 50%;
+        }
+
+        .card span {
+            display: block;
+        }
+        .card .image {
+            width: 25%;
+            height: 90px;
+        }
+       }
+
+       @media screen and (max-width: 600px) {
+        .card {
+            display: flex;
+            width: 77%;
+        }
+
+        .card span {
+            display: block;
+        }
+        .card .image {
+            width: 27%;
+            height: 90px;
+        }
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+      <div class="blob"></div>
+        <img class="image" src="image-1 (1).jpg" alt="">
+            <span>Joshua Gesta</span>
+            <p class="info">Hi!! My name Joshua Gesta and I'm a passionate information Technology. 
+            I have always loved to code and build websites. I get a lot of satisfaction out of 
+            learning about the intricate world of programming and solving problems. I am currently 
+            a degree in information technology at Informatics North-Gate, where I am specializing 
+            in web development and front-end work.</p>
+       
+            <div class="social">
+            <a href="https://www.facebook.com/joshua.gesta.12?mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ybn.skirt?igsh=cXhvbHE1Zm1hemU3"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.tiktok.com/@haelynnofficial?_t=8lIBPtlWZya&_r=1"><i class='bx bxl-tiktok' ></i></a>
+            <a href="https://github.com/dashboard"><i class='bx bxl-github' ></i></a>
+            </div>
+            <button class="about-button">Hello</button>
+    </div>
+</body>
+</html>
